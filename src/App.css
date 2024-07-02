@@ -1,0 +1,319 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 40px; /* Increased left and right padding */
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.logo img {
+    height: 30px; /* Adjusted logo height */
+    margin-right: 16px; /* Added margin to separate logo from nav menu */
+}
+
+.nav-menu {
+    display: flex;
+    gap: 24px;
+    margin-right: auto; /* Pushes nav menu to the left */
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+    position: relative;
+    padding: 8px 0;
+}
+
+.nav-menu a::after {
+    content: '▼';
+    font-size: 12px;
+    color: #333;
+    margin-left: 4px;
+}
+
+.nav-menu a.no-arrow::after {
+    display: none;
+}
+
+.nav-menu a:hover::after {
+    content: '▲';
+}
+
+.nav-menu a:hover {
+    color: #007bff;
+}
+
+.nav-menu a:hover::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: #007bff;
+    animation: slide-in 0.3s forwards;
+}
+
+@keyframes slide-in {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.right-menu {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.button {
+    padding: 8px 16px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.main-section {
+    text-align: left;
+    padding: 100px 40px; /* Increased left and right padding */
+    background-color: #ffffff; 
+}
+
+
+.main-section h1 {
+    font-size: 70px;
+    margin-bottom: 40px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.highlight {
+    animation: color-change 5s infinite;
+}
+
+@keyframes color-change {
+    0%, 100% { color: #ff0000; }
+    25% { color: #00ff00; }
+    50% { color: #0000ff; }
+    75% { color: #ff00ff; }
+}
+
+.main-section .button {
+    padding: 16px 32px;
+    font-size: 40px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 8px;
+}
+
+.main-section .button:hover {
+    background-color: #0056b3;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+
+
+.social-login {
+  
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.social-login button {
+    width: 100%;
+    padding: 3px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.social-login button i {
+    margin-right: 8px;
+}
+
+.google-icon {
+    color: #DB4437; /* Google's red color */
+}
+
+.tos {
+    font-size: 12px;
+    color: #666;
+    margin-top: 12px;
+    line-height: 1.5; /* Adjusted line height for new paragraph */
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.checkbox input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+}
+
+.blue {
+    color: blue;
+}
+
+.social-login img {
+    height: 39px;
+}
+.tos2{
+    color: #0056b3;
+    cursor: pointer;
+}
+.tos1{
+    font-size: 12px;
+    color: #666;
+    margin-top: 12px;
+
+}
+.tos3{
+    color: #0056b3;
+    cursor: pointer;
+}
+
+
+
+.toss{
+    margin-top: 25px;
+    color:#0056b3;
+    font-size: 16px;
+    font-weight:700;
+    
+}
+
+.login-button{
+  
+    margin-top: 25px;
+    padding: 12px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+
+}
+.toss2{
+    cursor: pointer;
+    color: #0000ff;
+    
+}
+.toss3{
+    cursor: pointer;
+    color: #0000ff;
+}
+.toss4 span{
+    cursor: pointer;
+}
+/* .a{
+    
+    text-decoration: none;
+    margin-top: 2px;
+    padding: 16px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+} */
+.create{
+
+    color: #0056b3;
+}
+.right-menu button{
+    padding: 8px 16px; 
+    /* background-color: black; */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+   
+
+.modal-dialog{
+    width: 500px ;
+}
+.modal-content{
+    width: 500px;
+}
+.one{
+    border: 2px solid black;
+    border-radius: 5px; 
+}
+.two{
+    border: 2px solid black;
+    border-radius: 5px; 
+    
+}
+.modal-dialog{
+    max-width: 50%;
+
+}
+.modal-content{
+    padding: 18px;
+    max-width: 80%;
+}
+.reset{
+    cursor: pointer;
+}
+.under-line{
+    text-align: center;
+    text-decoration: underline;
+    cursor: pointer;
+    
+}
+.bold-text{
+ font-weight: 700;
+}
+.modal-header{
+    border-bottom: none;
+}
+
+
+
